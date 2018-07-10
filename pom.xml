@@ -25,7 +25,7 @@
 	</dependencies>
 
 	<modules>
-		<module>quickstart-modular-jarslink</module>
+		<module>quickstart-jarslink</module>
 	</modules>
 
 </project>

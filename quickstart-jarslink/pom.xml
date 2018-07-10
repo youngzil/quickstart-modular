@@ -10,7 +10,7 @@
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>quickstart-modular-jarslink</artifactId>
+	<artifactId>quickstart-jarslink</artifactId>
 	<packaging>pom</packaging>
 	<name>${project.artifactId}-${project.version}</name>
 	<url>http://maven.apache.org</url>
@@ -64,14 +64,14 @@
 	</dependencies>
 
 	<modules>
-		<module>quickstart-modular-jarslink-web</module>
-		<module>quickstart-modular-jarslink-api</module>
-		<module>quickstart-modular-jarslink-memory</module>
-		<module>quickstart-modular-jarslink-mysql</module>
-		<module>quickstart-modular-jarslink-redis</module>
-		<module>quickstart-modular-jarslink-app</module>
-		<module>quickstart-modular-jarslink-service-a</module>
-		<module>quickstart-modular-jarslink-service-b</module>
+		<module>quickstart-jarslink-api</module>
+		<module>quickstart-jarslink-memory</module>
+		<module>quickstart-jarslink-mysql</module>
+		<module>quickstart-jarslink-redis</module>
+		<module>quickstart-jarslink-app</module>
+		<module>quickstart-jarslink-service-a</module>
+		<module>quickstart-jarslink-service-b</module>
+		<module>quickstart-jarslink-web</module>
 	</modules>
 
 </project>

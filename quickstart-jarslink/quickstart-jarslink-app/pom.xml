@@ -5,13 +5,13 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<parent>
 		<groupId>org.quickstart</groupId>
-		<artifactId>quickstart-modular-jarslink</artifactId>
+		<artifactId>quickstart-jarslink</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath>..</relativePath> <!-- lookup parent from repository -->
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>quickstart-modular-jarslink-app</artifactId>
+	<artifactId>quickstart-jarslink-app</artifactId>
 	<packaging>jar</packaging>
 	<name>${project.artifactId}-${project.version}</name>
 	<url>http://maven.apache.org</url>
