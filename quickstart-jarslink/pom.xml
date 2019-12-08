@@ -1,77 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<parent>
-		<groupId>org.quickstart</groupId>
-		<artifactId>quickstart-modular</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-		<relativePath>..</relativePath> <!-- lookup parent from repository -->
-	</parent>
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>org.quickstart</groupId>
+    <artifactId>quickstart-modular</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>..</relativePath> <!-- lookup parent from repository -->
+  </parent>
 
-	<modelVersion>4.0.0</modelVersion>
-	<artifactId>quickstart-jarslink</artifactId>
-	<packaging>pom</packaging>
-	<name>${project.artifactId}-${project.version}</name>
-	<url>http://maven.apache.org</url>
-	<description>Demo project for XXX</description>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>quickstart-jarslink</artifactId>
+  <packaging>pom</packaging>
+  <name>${project.artifactId}-${project.version}</name>
+  <url>http://maven.apache.org</url>
+  <description>Demo project for XXX</description>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<jarslink.version>1.6.1.20180301</jarslink.version>
-		<jarslink.version>1.5.0.20180213</jarslink.version>
-	</properties>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <jarslink.version>1.6.1.20180301</jarslink.version>
+    <jarslink.version>1.5.0.20180213</jarslink.version>
+  </properties>
 
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-dependencies</artifactId>
-<!-- 				<version>1.5.13.RELEASE</version> -->
-				<version>2.0.0.RELEASE</version>
-				
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <!-- 				<version>1.5.13.RELEASE</version> -->
+        <version>2.0.0.RELEASE</version>
 
-	<dependencies>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
-		<dependency>
-			<groupId>com.alipay.jarslink</groupId>
-			<artifactId>jarslink-api</artifactId>
-			<version>${jarslink.version}</version>
-		</dependency>
+  <dependencies>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
+    <!--    现在已经合并到蚂蚁金服开源项目sofa-jarslink里面了-->
+    <dependency>
+      <groupId>com.alipay.jarslink</groupId>
+      <artifactId>jarslink-api</artifactId>
+      <version>${jarslink.version}</version>
+    </dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
 
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>fastjson</artifactId>
-			<version>1.2.46</version>
-		</dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
 
-	</dependencies>
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.46</version>
+    </dependency>
 
-	<modules>
-		<module>quickstart-jarslink-api</module>
-		<module>quickstart-jarslink-memory</module>
-		<module>quickstart-jarslink-mysql</module>
-		<module>quickstart-jarslink-redis</module>
-		<module>quickstart-jarslink-app</module>
-		<module>quickstart-jarslink-service-a</module>
-		<module>quickstart-jarslink-service-b</module>
-		<module>quickstart-jarslink-web</module>
-	</modules>
+  </dependencies>
+
+  <modules>
+    <module>quickstart-jarslink-api</module>
+    <module>quickstart-jarslink-memory</module>
+    <module>quickstart-jarslink-mysql</module>
+    <module>quickstart-jarslink-redis</module>
+    <module>quickstart-jarslink-app</module>
+    <module>quickstart-jarslink-service-a</module>
+    <module>quickstart-jarslink-service-b</module>
+    <module>quickstart-jarslink-web</module>
+  </modules>
 
 </project>

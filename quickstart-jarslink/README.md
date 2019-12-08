@@ -1,3 +1,7 @@
+现在已经合并到蚂蚁金服开源项目sofa-jarslink里面了
+https://github.com/sofastack/sofa-jarslink
+
+
 如何使用:https://github.com/alibaba/jarslink/wiki/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8
 
 JarsLink (原名Titan) 是一个基于JAVA的模块化开发框架，它提供在运行时动态加载模块（一个JAR包）、卸载模块和模块间调用的API。
